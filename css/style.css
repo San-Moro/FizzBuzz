@@ -1,0 +1,25 @@
+/* MAIN */
+main {
+    background-color: #083b4c;
+}
+
+.box {
+    height: 100px;
+    background-color: #1389b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.fizz {
+    background-color: #0bd6a1;
+}
+
+.buzz {
+    background-color: #ffd166;
+}
+
+.fizz-buzz {
+    background-color: #f0466f;
+}

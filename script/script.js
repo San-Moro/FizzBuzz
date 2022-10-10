@@ -2,29 +2,34 @@
 // ma che per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi “Buzz”.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
+const row = document.querySelector(".row");
 let i ="";
 
-for (let i = 0; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
 
     // Se numero multiplo sia di 3 che di 5 stampi “FizzBuzz”
 
-    let fizzBuzz = "";
+    let myNumbers = "";
 
     if (i % 3 === 0 && i % 5 === 0) {
-      fizzBuzz = "FizzBuzz";
-      console.log(fizzBuzz);
+        myNumbers = "FizzBuzz";
         // Se numero multiplo di 3 stampi “Fizz”
     } else if (i % 3 ===0) {
-        fizzBuzz = "Fizz";
-        console.log(fizzBuzz);
+        myNumbers = "Fizz";
         // Se numero multiplo di 5 stampi “Buzz”
     } else if (i % 5 ===0) {
-        fizzBuzz = "Buzz";
-        console.log(fizzBuzz);
+        myNumbers = "Buzz";
     }
     else {
-        fizzBuzz = i;
-        console.log(fizzBuzz);
+        myNumbers = i;
     }
+
+    // Output
+    const box = document.createElement("div");
+    box.classList.add("box");
+    box.classList.add("myNumbers");
+    box.innerHTML = myNumbers;
+    console.log(box);
+    row.append(box);
 }
 
